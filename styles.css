@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Asegúrate de que html y body ocupen el 100% de la altura */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f3e2; /* Color de fondo amarillo crema */
+    color: #333;
+}
+
+.container {
+    display: flex; /* Usar flexbox para alinear el contenido */
+    min-height: 100vh; /* Asegúrate de que el contenedor ocupe toda la altura de la ventana */
+    flex-direction: row; /* Mantener el menú a la izquierda y el contenido a la derecha */
+}
+
+header {
+    background-color: #005599; /* Color de fondo del encabezado */
+    color: white;
+    display: flex; /* Usar flexbox para alinear el contenido */
+    align-items: center; /* Centrar verticalmente */
+    padding: 10px; /* Reducir el padding para hacer el encabezado más pequeño */
+}
+
+header img {
+    max-width: 120px; /* Tamaño del logo */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-right: 15px; /* Espacio a la derecha del logo */
+}
+
+.sidebar {
+    flex: 1; /* Asegura que la barra lateral ocupe el espacio restante */
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #444;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    flex: 3; /* Permite que el contenido ocupe más espacio */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ocultar todas las secciones inicialmente */
+.content-section {
+    display: none;
+}
+
+/* Mostrar la sección seleccionada con el selector :target */
+:target {
+    display: block;
+}
+
+.content h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.content p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Hace que el footer se mantenga al final */
+}
+
+
+
+
+
+
+
+
+
